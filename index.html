@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador </title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'> 
+        <style>
+            #myDIV {
+                width: 577px;
+                height: 48px;
+                top: 168px;
+                left: 240px;
+
+            }
+        </style>
+    </head>
+<body>
+        <header>
+            <div class="caja">
+                <h1><img class="letraA" src="Logo.png" alt="letra"></h1>
+                <h2 class="rectangulo"></h2>
+                <h3><img class="munheco" src="muneco.png" alt="muñeco"></h3>
+            </div>
+        </header>
+        <main>
+            <section>
+                <textarea class="text-area"  cols="30" rows="30"  placeholder="Ingrese el texto aqui"></textarea> 
+                <div>
+                    <h4 class="informacion"><span class="bi bi-exclamation-circle"></span>Solo letras minusculas y sin acentos</h4>
+                </div>
+                <div>
+                    <button class="enviar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="recibir" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <textarea id="HTMLBox" class="mensaje" readonly  cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+                    <button id="HTMLButton" class="copiar">Copiar</button>    
+                </div>
+            </section>
+        </main>
+<script src="script.js"></script>
+</body>
+</html>
